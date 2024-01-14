@@ -1,0 +1,25 @@
+package P1to5;
+
+import java.util.Scanner;
+public class Prime_Number {
+public static void main(String []a)
+{
+	Scanner sc=new Scanner(System.in);//it is used to take user input
+	System.out.println("enter any number");//message for user
+	int n=sc.nextInt();//to take value from user
+	
+	for(int i=2;i<=n/2;i++)
+	{
+		if (n%i==0)//if n is divisible for any numbers expexct 1 and itself ,its not a prime number and break the condition
+		{
+			System.out.println(" it is not a prime Number :"+n);
+			break;
+		}
+		else//if condition is false ,its a prime number and break the else part
+		{
+			System.out.println(" it is a prime Number :"+n);
+			break;
+		}
+	}
+}
+}
