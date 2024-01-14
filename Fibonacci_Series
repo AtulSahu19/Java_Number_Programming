@@ -1,0 +1,20 @@
+//Q. Find the fibonacci series using java program
+package P1to5;
+
+public class Fibonacci_Series {
+public static void main(String []a)
+{
+	int n1=0,n2=1,n3;
+	System.out.print(n1+" "+n2);//printing 0 1 in the console
+	for(int i=2;i<=9;i++)
+	{
+		n3=n1+n2;//0+1=1//1+1=2//1+2=3//2+3=5//3+5=8//5+8=13//8+13=21//13+21=34
+		System.out.print(" "+n3);//n3=1 2 3 5 8 13 21 34
+		n1=n2;//1//1//2//3//5//8//13//21
+		n2=n3;//1//2//3//5//8//13//21//34
+		//after n1=21 and n2=34 , then condition will be false and loop will not executed
+		}
+//0 and 1 was print 1st printing statement and 2nd printing statement then output
+//is 0 1 1 2 3 5 8 13 21 34
+}
+}
